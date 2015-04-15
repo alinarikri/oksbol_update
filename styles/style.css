@@ -1,0 +1,374 @@
+/*-------- STYLE GUIDE--------------------*/
+
+/* Colors:
+Blue: #1e4d5a
+Blue rgba (24,62,72,0.84)
+Red: #e0322a
+
+Typography: 
+Headlines: Minerva Modern Bold,
+Sizes: h1: 32px; h2: 24px;
+Body text: Open sans
+Size: 16px;
+
+*/
+/*========================================
+	RESET
+=========================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*----------------------------------------------------
+		GLOBAL STYLES
+----------------------------------------------------*/
+
+body {
+	
+	background-color: rgba(248,247,247,0.70);
+	background-image: url(../images/hearts-background-bw-45.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #f3f3f3;
+	font: 100% 'Open- Sans', sans-serif;	
+}
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+h1, h2, p {
+	margin: 2% 0;
+}
+#pageHeader {
+	height: 350px;
+	margin-top: 32px;
+}
+#siteTitle {
+	width: 149px;
+	margin: 0 auto;
+	color: #e0322a;
+	margin-top: 32px;
+	}
+	#siteTitle h1 {
+		font-size: 58px;
+		}
+	#siteTitle h2 {
+		font-size: 18px;
+	}
+#aboutProject {
+	float: right;
+}
+
+nav li {
+	display: inline;
+}
+nav li a {
+	text-decoration: none;
+	color: #1e4d5a;
+	line-height: 140%;
+	padding: 2px 16px;
+}
+	a:visited {
+		/*color: #072B5C;*/}
+	
+	a:hover {
+		transition: font-weight 1s ease-in;
+	}
+	
+.active {
+	background-color: rgba (24,62,72,0.84);
+	color: #fff;
+	}
+
+h1 {
+	font-size: 200%;
+	font-weight: 900;
+}
+	
+h2 {
+	font-size: 170%;
+}
+
+p {
+	line-height: 150%;
+	margin-bottom: 32px;
+}
+.btn {
+	border: 1px solid white;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	margin: 16px 0;
+	padding: 8px;
+	border-radius: 3px;
+	}
+.btn a:visited { 
+	}
+
+.btn a:hover {
+		color: white;
+		font-size: 1.1em;
+	}
+	
+.btn a:active {}
+
+.action-btn {
+	line-height: 2;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: 1px solid #e0322a;
+	border-radius: 3px;
+	color: #f3f3f3;
+	background-color: #E0322A;
+	padding: 8px 16px;
+	text-decoration: none;
+	}
+/*-------------------------------------------------
+	CONTENT BLOCKS STYLES
+--------------------------------------------------*/
+
+#whyTakePart, #whatIsPart {
+	background-color: rgba(24,62,72,0.84);
+	float: left;
+	margin-bottom: 8px;
+	width: 100%;
+}
+#whatIsPart {
+	padding: 32px;
+	width: 896px;
+	position: relative;
+}
+
+#whatIsPart img{
+	float: right;
+	margin-right: 16px;
+	}
+	
+#whatIsPart p {
+	width: 640px;
+	}
+#howTakePart {
+	clear: both;
+	background-color: #E0322A;
+	padding: 32px;
+	margin-bottom: 8px;
+}
+#howToList {
+	padding: 0 32px;
+	}
+	#howToList li {
+		display: inline-block;
+		width: 250px;
+		line-height: 130%;
+		font-size: 18px;
+	}
+
+.blockImage {
+	margin: 32px;
+	float:left;
+	border-radius: 100%;
+	width: 30%;
+	height: auto;
+}
+.blockContent {
+	margin: 64px 64px 0 384px;
+}
+#appPromo {
+	background-color: rgba(24,62,72,0.84);
+	height: 332px;
+	padding: 32px;
+	margin-bottom: 8px;
+	clear: both;
+	}
+#appPromo h1 {
+	font-size: 70px;
+}
+/*---------INNER PAGE STYLES -------------*/
+
+.project-category {
+	background-color: rgba(24,62,72,0.84);
+	float: left; /*Contains floated children*/
+	padding: 32px;
+	margin-bottom: 8px;
+}
+.project {
+	clear: both;
+	background-color: rgba(236,236,236,0.83);
+	color: #000;
+	padding: 32px;
+	margin-bottom: 8px;
+    width: 928px;
+}
+.project-category img, .project img {
+	float: left;
+	border-radius: 100%;
+	margin-right: 32px;
+	box-shadow: 1px 3px 5px #4A4444;
+}
+.project img {
+	margin-bottom: 32px;
+}
+.project section {
+	clear: both;
+}
+.share {
+	float: right;
+}
+.project p {
+	width: 85%;
+}
+
+/*--------------------------------- 
+	FORM STYLES 
+------------------------------------*/
+#newsLetterSubscription {
+	padding: 16px 0;
+}
+label {
+	float: left;
+	width: 130px;
+	}
+#email, #name {
+	width: 307px;
+	line-height: 2;
+	padding: 3px 0 3px 16px;
+	vertical-align:middle;
+	margin: 2px;
+}
+.submit {
+	line-height: 2;
+	font-size: 16px;
+	text-transform: uppercase;
+	width: 128px;
+	border: 1px solid #e0322a;
+	color: #f3f3f3;
+	background-color: #E0322A;
+	vertical-align: middle;
+	}
+#sendIdeaForm {
+	background-color: rgba(24,62,72,0.84);
+	padding: 32px;
+	clear: both;
+	margin-bottom: 8px;
+}
+
+#idea {
+	margin-left: 132px;
+	}
+#sendIdeaForm .submit {
+	margin: 2px 0 0 132px;
+}	
+::-webkit-input-placeholder {
+   font-size:16px;
+}
+:-moz-placeholder { /* Firefox 18- */
+   font-size:16px;
+   padding: 8px; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size:16px; 
+   padding: 8px;  
+}
+:-ms-input-placeholder {  
+   font-size:16px; 
+   padding: 8px; 
+}
+textarea {
+	font: inherit;
+}
+
+/*------------------------------------
+	FOOTER STYLE
+-------------------------------------*/
+#pageFooter {
+	clear:both;
+	background-color: #1e4d5a;
+	height: 170px;
+	padding: 32px;
+}
+#socialLinks {
+	float: left;
+	width: 300px;
+	}
+#socialLinks li {
+	margin-bottom: 16px;
+}
+#socialLinks h3 {
+	margin-bottom: 16px;}
+#contacts {
+	width: 300px;
+	float: right;
+}
+.twitter-follow-button {
+	vertical-align: middle;
+}
+.text .fb_iframe_widget {
+    display: inline-block;
+    margin-left: 80%;
+    position: relative;
+}
+/*-----------------------------------
+	MEDIA QUERIES
+------------------------------------*/
+@media only screen and (max-width: 480pxem) {
+	
+	#container {
+		width: 100%;
+	}
+	body {
+		background-color: green;
+	}
+}
+@media only screen and (min-width: 481em) and (max-width: 768em) {
+	/*tablet styles*/
+}

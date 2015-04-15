@@ -1,0 +1,194 @@
+/*-------- STYLE GUIDE--------------------*/
+
+/* Colors:
+Blue: #1e4d5a
+Red: #e0322a
+
+Typography: 
+Headlines: ------
+Body text: Open sans
+
+*/
+/*-------------------RESET-------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top:24px;
+}
+
+
+/*----GLOBAL STYLES-------*/
+body, html {
+	height: 100%;
+	}
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgba(248,247,247,0.70);
+	background-image: url(../images/hearts-background-bw-45.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #000;
+	font: 100% 'Open- Sans', sans-serif;	
+}
+#container {
+	background-color: rgba(248,247,247,0.70);
+	padding: 32px;
+	height: 100%;
+}
+h1, h2, p {
+	margin: 2% 0;
+}
+#pageHeader {
+	height: 150px;
+	margin-top: 32px;
+}
+#siteTitle {
+	margin: 32px 0 32px 170px;
+	color: #e0322a;
+	margin-top: 32px;
+	}
+	#siteTitle h1 {
+		font-size: 50px;
+		}
+	#siteTitle h2 {
+		font-size: 16px;}
+/*#aboutProject {
+	float: right;
+}
+nav ul {
+
+}*/
+nav li {
+	display: inline;
+}
+nav li a {
+	text-decoration: none;
+	color: #1e4d5a;
+	line-height: 140%;
+	padding: 2px 16px;
+}
+	
+	a:hover {
+		/*color: #ff3a00;*/
+		text-decoration: underline;
+	}
+h1 {
+	font-size: 200%;
+	font-weight: 900;
+}
+	
+h2 {
+	font-size: 170%;
+}
+p {
+	line-height: 130%;
+	margin-bottom: 16px;
+}
+.btn {
+	border: 1px solid #e0322a;
+	text-decoration: none;
+	color: #e0322a;
+	text-transform: uppercase;
+	margin: 16px 0;
+	padding: 8px;
+	}
+
+.btn a:hover {
+		color: white;
+		font-size: 1.1em;
+}
+	
+td {
+	line-height: 2;
+	padding: 8px;
+}
+
+input {
+	width: 200px;
+	line-height: 2.5;
+	margin: 4px 0 0 0;
+}
+/*---------------CONTENT BLOCKS STYLES---------*/
+#logo {
+	float: left;
+	margin-right: 32px;
+	}
+
+/*--------------- FORM STYLES ---------------*/
+#newsLetterSubscription {
+	padding: 16px;
+}
+label {
+	float: left;
+	width: 130px;
+	}
+#email, #name {
+	width: 303px;
+	line-height: 2;
+	padding: 3px 0 3px 16px;
+	vertical-align:middle;
+	margin: 2px;
+}
+.submit {
+	line-height: 2;
+	font-size: 16px;
+	text-transform: uppercase;
+	width: 128px;
+	border: 1px solid #e0322a;
+	color: #f3f3f3;
+	background-color: #E0322A;
+	vertical-align:middle;
+	}
+#idea {
+	margin-left: 132px;
+	}
+#sendIdeaForm .submit {
+	margin: 2px 0 0 132px;
+	}
